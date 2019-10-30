@@ -1,0 +1,21 @@
+<!--component/selected-course/selected.wxml-->
+<view class="selected-warpper">
+  <view class="selected-header">
+    <text class="header-title">本周精选课</text>
+    <view class="btn-warpper">
+      <button class="btn">
+        <text class="iconfont iconbofang" style="font-size:33rpx;"></text>
+        <text class="btn-check">查看</text>
+      </button>
+    </view>
+  </view>
+  <view class="selected-main">
+    <view class="main-pic">
+      <image class="pic" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+    </view>
+    <view class="main-content">
+      <text class="main-title">色彩心理学</text>
+      <text class="main-desc">色彩心理学色彩心理学色彩心理学色彩心理学色彩心理学色彩心理学色彩心理学色彩心理学彩心理学色彩心理学色彩心理学色彩心理色彩心理学色彩心理</text>
+    </view>
+  </view>
+</view>

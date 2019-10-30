@@ -1,0 +1,30 @@
+<!--component/course/course.wxml-->
+<view class="course-warpper">
+  <view class="course-content">
+    <view class="course-pic">
+      <image class="pic" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+      <view class="pic-desc">
+        <text style="font-size:22rpx;color:#b2b2b2;font-weight:bold">19900人在看</text>
+      </view>
+    </view>
+    <view class="course-main">
+      <view class="course-top">
+        <view class="course-title">
+          <text>考研特训</text>
+        </view>
+        <view class="courese-desc">
+          <text>录播三界端</text>
+        </view>
+      </view>
+      <view class="course-bottom">
+        <view class="courese-periods">
+          已更新6期
+        </view>
+        <view class="courese-price">
+          <view class="old-price">$498</view>
+          <view class="price">$498</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

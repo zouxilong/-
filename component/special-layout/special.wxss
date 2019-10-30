@@ -1,0 +1,33 @@
+/* component/special-layout/special.wxss */
+
+.specail-warpper {
+  width: 705rpx;
+  margin: 0 auto;
+}
+
+.specail-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.specail-main {
+  width: 340rpx;
+}
+
+.specail-pic {
+  width: 340rpx;
+  height: 200rpx;
+}
+
+.pic {
+  width: 340rpx;
+  height: 200rpx;
+  border-radius: 12rpx;
+}
+
+.spacail-title {
+  text-align: center;
+  font-size: 25rpx;
+  line-height: 50rpx;
+}

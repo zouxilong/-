@@ -1,0 +1,110 @@
+/* component/selected-course/selected.wxss */
+
+page {
+  background: #f7f7f7;
+}
+
+.selected-warpper {
+  width: 630rpx;
+  height: 300rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20rpx;
+  margin: 0 auto;
+}
+
+.selected-header {
+  width: 83%;
+  height: 30rpx;
+  display: flex;
+  flex: 0 0 20%;
+  justify-content: space-between;
+  margin: 25rpx auto;
+  border-bottom: 3rpx solid #eeeded;
+}
+
+.header-title {
+  color: #31c9fc;
+  font-size: 34rpx;
+  font-family: "STZhongsong";
+  margin-left: -26rpx;
+}
+
+.btn-warpper {
+  width: 140rpx;
+  height: 50rpx;
+}
+
+button {
+  padding-right: 4rpx;
+  padding-left: 6rpx;
+}
+
+.btn {
+  display: flex;
+  flex: 0 0 20%;
+  width: 120rpx;
+  height: 50rpx;
+  background-color: #2bc8fc;
+  color: #fff;
+  font-size: 25rpx;
+  border-radius: 24rpx;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: -22rpx;
+}
+
+.btn::after {
+  border: 0;
+}
+
+.btn-check {
+  margin-top: -2rpx;
+}
+
+.selected-main {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.main-pic {
+  margin-left: -10rpx;
+}
+
+.pic {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.main-content {
+  width: 60%;
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  font-size: 30rpx;
+  font-family: "PingFang-SC-Bold";
+  font-weight: bold;
+  line-height: 60rpx;
+  margin-top: -15rpx;
+}
+
+.main-desc {
+  font-size: 20rpx;
+  font-family: "PingFang-SC-Regular";
+  color: #979696;
+  letter-spacing: 2rpx;
+ text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}

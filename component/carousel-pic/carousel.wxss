@@ -1,0 +1,30 @@
+/* component/Carousel-pic/carousel.wxss */
+/* swiper{
+  width: 700rpx;
+  height: 273rpx;
+}
+.slide-image{
+  width: 100%;
+  height: 273rpx;
+  border-radius: 15rpx;
+} */
+.swiperClass {
+  margin: 0;
+}
+
+.slide-image {
+  width: 100%; 
+  height: 95%;
+  border-radius: 10px;
+  position: relative;
+}
+
+image.active {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+} 
+
+image.quiet {
+  transform: scale(0.8333333);
+  transition: all 0.2s ease-in 0s;
+}

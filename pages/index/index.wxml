@@ -1,0 +1,2 @@
+<!--pages/index/index.wxml-->
+<carousel imgUrls="{{imgUrls}}"></carousel>

@@ -1,0 +1,13 @@
+/* component/advertising-pic/advertisting.wxss */
+
+.advertising-warpper {
+  width: 650rpx;
+  height: 220rpx;
+  margin: 0 auto;
+}
+
+.pic {
+  width: 650rpx;
+  height: 220rpx;
+  border-radius: 15rpx;
+}

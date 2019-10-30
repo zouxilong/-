@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "component/titleBar-layout/titlebar",
+    "component/course-layout/course",
+    "component/special-layout/special",
+    "component/advertising-pic/advertisting",
+    "component/page-icon/pageIcon",
+    "component/carousel-pic/carousel",
+    "component/selectedCourse-layout/selected",
+    "component/copyright/copyright",
+    "pages/login/login",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

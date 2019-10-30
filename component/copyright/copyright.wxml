@@ -1,0 +1,4 @@
+<!--component/copyright/copyright.wxml-->
+<view class="copyright-wrapper">
+<text class="iconfont iconziyuan" style="font-size:60rpx;padding-left:60rpx"></text> 
+</view>

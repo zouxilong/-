@@ -1,0 +1,11 @@
+/* component/titleBar-layout/titlebar.wxss */
+.titlebar-warpper{
+  width: 690rpx;
+  background: #f7f7f7;
+  margin: 0 auto;
+}
+.titlebar-content{
+ display: flex;
+ padding: 25rpx 0;
+ justify-content: space-between;
+}
