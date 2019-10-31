@@ -1,7 +1,6 @@
 /* component/titleBar-layout/titlebar.wxss */
 .titlebar-warpper{
-  width: 690rpx;
-  background: #f7f7f7;
+  width: 660rpx;
   margin: 0 auto;
 }
 .titlebar-content{

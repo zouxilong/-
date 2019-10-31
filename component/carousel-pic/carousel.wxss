@@ -10,6 +10,7 @@
 } */
 .swiperClass {
   margin: 0;
+  height: 145px;
 }
 
 .slide-image {

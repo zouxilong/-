@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-.pic {
+.advertising-pic {
   width: 650rpx;
   height: 220rpx;
   border-radius: 15rpx;

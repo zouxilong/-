@@ -1,7 +1,7 @@
 /* component/course/course.wxss */
 
 .course-warpper {
-  width: 670rpx;
+  width: 637rpx;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -19,7 +19,7 @@
   height: 187rpx;
 }
 
-.pic {
+.course-pic2 {
   width: 251rpx;
   height: 187rpx;
   border-radius: 10rpx;

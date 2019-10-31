@@ -1,13 +1,12 @@
 /* component/page-icon/pageIcon.wxss */
 
 .pageIcon-wrapper {
-  width: 600rpx;
-  background: #f7f7f7;
+  width: 655rpx;
   margin: 0 auto;
 }
 
 .pageIcon-content {
-  width: 600rpx;
+  width: 653rpx;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -29,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom:60rpx;
+  margin-bottom: 60rpx;
 }
 
 .pageIcon-text {
@@ -38,4 +37,9 @@
   width: 90rpx;
   height: 20rpx;
   margin-top: 14rpx;
+}
+
+.icon-size {
+  width: 45rpx;
+  height: 45rpx;
 }

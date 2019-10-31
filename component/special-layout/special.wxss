@@ -20,7 +20,7 @@
   height: 200rpx;
 }
 
-.pic {
+.specail-pic2 {
   width: 340rpx;
   height: 200rpx;
   border-radius: 12rpx;

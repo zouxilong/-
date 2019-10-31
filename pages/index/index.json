@@ -1,5 +1,12 @@
 {
   "usingComponents": {
-    "carousel":"/component/carousel-pic/carousel"
+    "search":"/component/search/search",
+    "carousel": "/component/carousel-pic/carousel",
+    "page-icon":"/component/page-icon/pageIcon",
+    "selected":"/component/selectedCourse-layout/selected",
+    "titlebar":"/component/titleBar-layout/titlebar",
+    "advertisting":"/component/advertisting-pic/advertisting",
+    "course":"/component/course-layout/course",
+    "special":"/component/special-layout/special"
   }
 }

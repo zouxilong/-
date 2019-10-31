@@ -1,16 +1,18 @@
 {
   "pages": [
     "pages/index/index",
+    "component/page-icon/pageIcon",
+    "component/search/search",
     "component/titleBar-layout/titlebar",
     "component/course-layout/course",
     "component/special-layout/special",
-    "component/advertising-pic/advertisting",
-    "component/page-icon/pageIcon",
+    "component/advertisting-pic/advertisting",
     "component/carousel-pic/carousel",
     "component/selectedCourse-layout/selected",
     "component/copyright/copyright",
     "pages/login/login",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "component/tab/tab"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,5 +20,29 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "iconPath": "/images/index-off.png",
+        "selectedIconPath": "/images/index-on.png",
+        "pagePath": "pages/index/index",
+        "text": "发现"
+      },
+      {
+        "iconPath": "/images/study-off.png",
+        "selectedIconPath": "/images/study-on.png",
+        "pagePath": "pages/logs/logs",
+        "text": "学习"
+      },
+      {
+        "iconPath": "/images/user-off.png",
+        "selectedIconPath": "/images/users-on.png",
+        "pagePath": "pages/logs/logs",
+        "text": "我的"
+      }
+    ]
+  }
 }

@@ -5,66 +5,111 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrls:[
+    imgUrls: [
       'https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg',
       'https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg',
       'https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg'
-    ]
+    ],
+    pageIcon: [{
+        icon: "collect",
+        desc: "我的收藏"
+      },
+      {
+        icon: "generalize",
+        desc: "我的推广"
+      },
+      {
+        icon: "my-courses",
+        desc: "我的课程"
+      },
+      {
+        icon: "learning-record",
+        desc: "学习记录"
+      }
+    ],
+    titleBar: {
+      title: "精品好课",
+    },
+    courseArr: [{
+        "banben": "1",
+        "name": "精英课程高大上",
+        "subtitle": "突出打好基础",
+        "price": "10.00",
+        "price_old": "20.00",
+        "des": "精英课程高大上的PPT设计秘籍",
+        "des_images": [
+          "http://edu.hd/assets/img/qrcode.png"
+        ]
+      },
+      {
+        "banben": "1",
+        "name": "精英课程高大上",
+        "subtitle": "突出打好基础",
+        "price": "10.00",
+        "price_old": "20.00",
+        "des": "精英课程高大上的PPT设计秘籍",
+        "des_images": [
+          "http://edu.hd/assets/img/qrcode.png"
+        ]
+      }, {
+        "banben": "1",
+        "name": "精英课程高大上",
+        "subtitle": "突出打好基础",
+        "price": "10.00",
+        "price_old": "20.00",
+        "des": "精英课程高大上的PPT设计秘籍",
+        "des_images": [
+          "http://edu.hd/assets/img/qrcode.png"
+        ]
+      }
+    ],
+    specailArr: [{
+        title : "精英课程高大上的PPT设计秘籍",
+        des_images: [
+          "http://edu.hd/assets/img/qrcode.png"
+        ]
+      },
+      {
+        title: "精英课程高大上的PPT设计秘籍",
+        des_images: [
+          "http://edu.hd/assets/img/qrcode.png"
+        ]
+      },
+      {
+        title: "精英课程高大上的PPT设计秘籍",
+        des_images: [
+          "http://edu.hd/assets/img/qrcode.png"
+        ]
+      },
+      {
+        title: "精英课程高大上的PPT设计秘籍",
+        des_images: [
+          "http://edu.hd/assets/img/qrcode.png"
+        ]
+      },
+    ],
+    currentTab: 0 //预定的位置
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
+  onLoad() {
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  //点击滑动
+  bindchange: function(e) {
+    console.log(1)
+    let that = this;
+    that.setData({
+      currentTab: e.detail.current
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //点击切换，滑块index赋值
+  clickTab: function(e) {
+    let that = this;
+    if (that.data.currentTab === e.currentTarget.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.currentTarget.dataset.current
+      })
+    }
   }
 })

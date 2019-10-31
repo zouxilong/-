@@ -1,36 +1,12 @@
 <!--component/special-layout/special.wxml-->
 <view class="specail-warpper">
   <view class="specail-content">
-    <view class="specail-main">
+    <view class="specail-main" wx:for="{{specailArr}}" wx:for-item="item">
       <view class="specail-pic">
-        <image class="pic" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+        <image class="specail-pic2" mode="scaleToFill" src="{{item.des_images}}"></image>
       </view>
       <view class="spacail-title">
-        <text>职场新人必修课</text>
-      </view>
-    </view>
-    <view class="specail-main">
-      <view class="specail-pic">
-        <image class="pic" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
-      </view>
-      <view class="spacail-title">
-        <text>职场新人必修课</text>
-      </view>
-    </view>
-    <view class="specail-main">
-      <view class="specail-pic">
-        <image class="pic" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
-      </view>
-      <view class="spacail-title">
-        <text>职场新人必修课</text>
-      </view>
-    </view>
-    <view class="specail-main">
-      <view class="specail-pic">
-        <image class="pic" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
-      </view>
-      <view class="spacail-title">
-        <text>职场新人必修课</text>
+        <text>{{item.title}}</text>
       </view>
     </view>
   </view>

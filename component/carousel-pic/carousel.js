@@ -18,6 +18,7 @@ Component({
    */
   data: {
     flag: true,
+    swiperIndex: 0 //这里不写第一次启动展示的时候会有问题
   },
 
   /**

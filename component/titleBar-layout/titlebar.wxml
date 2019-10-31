@@ -1,7 +1,7 @@
 <view class="titlebar-warpper">
   <view class="titlebar-content">
     <view class="titlebar-name">
-      <text style="font-size:30rpx;font-weight:bold;letter-spacing:2rpx;">大热专题</text>
+      <text style="font-size:30rpx;font-weight:bold;letter-spacing:2rpx;">{{title}}</text>
     </view>
     <view class="titlebar-all">
       <text style="font-size:24rpx;letter-spacing:2rpx;color:#abacac">全部课程</text>
