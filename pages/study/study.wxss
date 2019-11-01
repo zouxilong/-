@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+
+.tab-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  border-top: 3rpx solid #fafafa;
+}
+
+.tab-left, .tab-right {
+  flex: 1;
+  font-size: 30rpx;
+  text-align: center;
+  font-family: "Adobe Heiti Std R";
+  display: flex;
+  flex-direction: column;
+  line-height: 43rpx;
+  justify-content: center;
+}
+
+.course-update, .course-subscibe {
+  font-size: 18rpx;
+  letter-spacing: 2rpx;
+  width: 85rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  margin: 0 auto;
+}
+
+.tab-left {
+  border-right: 1rpx solid #fafafa;
+}
+
+.tab-active {
+  color: #f00;
+}
+
+.tab-active2 {
+  color: #fff;
+  background: #2bc8fc;
+  width: 85rpx;
+  height: 36rpx;
+  border-radius: 10rpx;
+  line-height: 36rpx;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  width: 100%;
+  flex: 1;
+}
+.subscibe{
+  margin-top:25rpx;
+}

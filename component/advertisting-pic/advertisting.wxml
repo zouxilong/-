@@ -1,5 +1,5 @@
 <!--component/advertising-pic/advertisting.wxml-->
 <view class="advertising-warpper">
-  <image class="advertising-pic" src="{{cover_pic}}">
+  <image class="advertising-pic" src="{{cover_pic}}" mode="aspectFill">
   </image>
 </view>

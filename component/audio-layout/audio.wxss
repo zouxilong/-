@@ -1,0 +1,99 @@
+/* component/audio-layout/audio.wxss */
+
+.audio-warpper {
+  width: 705rpx;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20rpx;
+}
+
+.audio-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.audio-top {
+  width: 640rpx;
+  margin: 0 auto;
+}
+
+.audio-header {
+  display: flex;
+  border-bottom: 1rpx solid #f0f0f0;
+  padding: 30rpx 0;
+  height: 190rpx;
+}
+
+.audio-main {
+  width: 430rpx;
+  flex-direction: column;
+  display: flex;
+  margin-left: 50rpx;
+  justify-content: space-between;
+}
+
+.audio-pic1 {
+  width: 190rpx;
+  height: 190rpx;
+}
+
+.audio-pic2 {
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 50%;
+}
+
+.audio-pic3 {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.audio-pic3 {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+
+.audio-title {
+  font-size: 30rpx;
+  line-height: 50rpx;
+  font-weight: bold;
+  font-family: "PingFang-SC-Bold";
+  letter-spacing: 2rpx;
+}
+
+.audio-subtitle {
+  font-size: 25rpx;
+  line-height: 50rpx;
+  color: #b6b7b7;
+  font-family: "PingFang-SC-Medium";
+  letter-spacing: 2rpx;
+}
+
+.audio-update {
+  font-size: 18rpx;
+  line-height: 36rpx;
+  color: #b6b7b7;
+  font-family: "Adobe Heiti Std R";
+  letter-spacing: 2rpx;
+}
+
+.audio-footer {
+  display: flex;
+  align-items: center;
+  padding: 13rpx 0;
+}
+
+.main-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.audio-main2 {
+  margin-left: 15rpx;
+  font-size: 27rpx;
+  font-family: "PingFang-SC-Regular";
+  letter-spacing: 2rpx;
+  color: #000;
+}

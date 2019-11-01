@@ -7,6 +7,9 @@
     "titlebar":"/component/titleBar-layout/titlebar",
     "advertisting":"/component/advertisting-pic/advertisting",
     "course":"/component/course-layout/course",
-    "special":"/component/special-layout/special"
+    "special":"/component/special-layout/special",
+    "audiolayout":"/component/audio-layout/audio",
+    "copyright":"/component/copyright/copyright",
+    "courseCover":"/component/couseCover-layout/couseCover"
   }
 }

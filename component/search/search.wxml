@@ -1,7 +1,7 @@
 <!--component/search/search.wxml-->
 <!-- 搜索栏 -->
 <view class="search-wrap">
-  <input class="search" bindinput="search" value='{{inputValue}}'></input>
+  <input class="search" bindinput="search" value='{{inputValue}}' placeholder="搜索专栏/课程/直播间"></input>
   <image src="/images/search.png" class="searchImg"></image>
   <image src="/images/cancel.png" class="closeImg" bindtap='close' wx:if="{{closeImg}}"></image>
   <!-- <view class="cancel" bindtap='cancel'>取消</view> -->

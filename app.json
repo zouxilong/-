@@ -1,6 +1,13 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/user/user",
+    "component/Page-user-messagelayout/messagelayout",
+    "component/head-portrait/headPortrait",
+    "component/usermessage-layout/userMessage",
+    "pages/study/study",
+    "component/couseCover-layout/couseCover",
+    "component/audio-layout/audio",
     "component/page-icon/pageIcon",
     "component/search/search",
     "component/titleBar-layout/titlebar",
@@ -12,7 +19,9 @@
     "component/copyright/copyright",
     "pages/login/login",
     "pages/logs/logs",
-    "component/tab/tab"
+    "component/tab/tab",
+    "component/Page-study-recommend/recommend",
+    "component/Page-study-subscibe/subscibe"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -34,13 +43,13 @@
       {
         "iconPath": "/images/study-off.png",
         "selectedIconPath": "/images/study-on.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/study/study",
         "text": "学习"
       },
       {
         "iconPath": "/images/user-off.png",
         "selectedIconPath": "/images/users-on.png",
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/user/user",
         "text": "我的"
       }
     ]

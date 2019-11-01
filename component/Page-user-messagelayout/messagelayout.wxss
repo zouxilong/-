@@ -1,0 +1,50 @@
+/* component/Page-user-messagelayout/messagelayout.wxss */
+.messagelayout-warpper {
+  width: 710rpx;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 16rpx;
+}
+
+.messagelayout-content {
+  margin: 0 auto;
+}
+
+.messagelayout-footer {
+  display: flex;
+  height: 155rpx;
+  align-items: center;
+}
+
+.messagelayout-part1 {
+  width: 345rpx;
+  height: 130rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.messagelayout-part2 {
+  width: 345rpx;
+  height: 130rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.messagelayout-title1 {
+  color: #4e98d1;
+}
+
+.messagelayout-data {
+  font-size: 35rpx;
+  color: #8A8888;
+  font-family: "Adobe Heiti Std R";
+}
+.messagelayout-unit{
+  font-size: 28rpx;
+  color:black;
+  margin-left: 20rpx;
+}

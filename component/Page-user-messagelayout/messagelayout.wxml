@@ -1,0 +1,15 @@
+<!--component/Page-user-messagelayout/messagelayout.wxml-->
+<view class="messagelayout-warpper">
+  <view class="messagelayout-content">
+    <view class="messagelayout-footer">
+      <view class="messagelayout-part1">
+        <text class="messagelayout-title1">我的课程</text>
+        <text class="messagelayout-data">113</text>
+      </view>
+      <view class="messagelayout-part2">
+        <text class="messagelayout-title1">已完成课程</text>
+        <text class="messagelayout-data">113</text>
+      </view>
+    </view>
+  </view>
+</view>

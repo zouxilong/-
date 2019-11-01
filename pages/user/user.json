@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "headportrait": "/component/head-portrait/headPortrait",
+    "usermessage":"/component/usermessage-layout/userMessage",
+    "messagelayout":"/component/Page-user-messagelayout/messagelayout",
+    "page-icon": "/component/page-icon/pageIcon"
+  }
+}

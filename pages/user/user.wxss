@@ -1,0 +1,22 @@
+/* pages/user/user.wxss */
+
+.index-header {
+  width: 100%;
+  height: 270rpx;
+  position: absolute;
+  z-index: -1;
+}
+
+.usermessage {
+  margin-top: 25rpx;
+}
+
+.headportrait {
+  padding: 30rpx 30rpx 0;
+}
+.page-icon{
+  margin-top: 40rpx;
+}
+.messagelayout{
+  margin-top:30rpx;
+}

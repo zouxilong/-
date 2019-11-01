@@ -1,0 +1,76 @@
+/* component/user-messge-layout/userMessage.wxss */
+
+.userMessage-warpper {
+  width: 710rpx;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 16rpx;
+}
+
+.userMessage-content {
+  margin: 0 auto;
+}
+
+.userMessage-header {
+  width: 680rpx;
+  border-bottom: 1rpx solid #eeee;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+}
+
+.userMessage-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  letter-spacing: 2rpx;
+  margin-left: 20rpx;
+}
+
+.userMessage-path {
+  font-size: 19rpx;
+  color: #9d9f9f;
+  letter-spacing: 2rpx;
+  margin-right: 20rpx;
+}
+
+.userMessage-footer {
+  display: flex;
+  height: 155rpx;
+  align-items: center;
+}
+
+.userMessage-part1 {
+  width: 345rpx;
+  height: 130rpx;
+  text-align: center;
+  border-right: 1rpx solid #eeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.userMessage-part2 {
+  width: 345rpx;
+  height: 130rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.userMessage-title1 {
+  color: #4e98d1;
+}
+
+.userMessage-data {
+  font-size: 41rpx;
+  color: #fe6800;
+  font-family: "Adobe Heiti Std R";
+}
+.userMessage-unit{
+  font-size: 28rpx;
+  color:black;
+  margin-left: 20rpx;
+}

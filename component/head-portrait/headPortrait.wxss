@@ -1,0 +1,13 @@
+/* component/head-portrait/headPortrait.wxss */
+
+.headPortrait-warpper {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.headPortrait-pic {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}

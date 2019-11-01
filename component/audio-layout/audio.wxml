@@ -1,0 +1,25 @@
+<!--component/audio-layout/audio.wxml-->
+<view class="audio-warpper">
+  <view class="audio-top">
+    <view class="audio-header">
+      <view class="audio-pic1">
+        <image class="audio-pic2" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+      </view>
+      <view class="audio-main">
+        <view class="main-top">
+          <text class="audio-title">47本好书提升人生格局</text>
+          <text class="audio-subtitle">豆瓣、亚马逊高分好书！</text>
+        </view>
+        <text class="audio-update">已更新至第11集</text>
+      </view>
+    </view>
+    <view class="audio-footer">
+      <view class="audio-pic3">
+        <image class="audio-pic3" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+      </view>
+      <view class="audio-main2">
+        <text class="audio-desc">老路：50个源自硅谷的工作方法论</text>
+      </view>
+    </view>
+  </view>
+</view>

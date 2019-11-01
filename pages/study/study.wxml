@@ -1,0 +1,21 @@
+<!--pages/study/study.wxml-->
+<view class='container'>
+
+  <view class='tab-wrapper'>
+    <view id='tableft' class='tab-left {{currentTab === 0 ? "tab-active":""}}' bindtap='switchTab'>我的订阅
+      <text class='course-update {{currentTab === 0 ? "tab-active2":""}}'>课程更新</text>
+    </view>
+    <view id='tabright' class='tab-right {{currentTab === 1 ? "tab-active" : ""}}' bindtap='switchTab'>猜你喜欢
+      <text class='course-subscibe {{currentTab === 1 ? "tab-active2" : ""}}'>最优推荐</text>
+    </view>
+  </view>
+
+  <view class='content-wrapper' wx:if='{{currentTab === 0}}'>
+    <view class="subscibe">
+      <subscibe courseCoverArr="{{courseCoverArr}}" />
+    </view>
+  </view>
+  <view class='content-wrapper' wx:if='{{currentTab === 1}}'>
+    <recommend />
+  </view>
+</view>

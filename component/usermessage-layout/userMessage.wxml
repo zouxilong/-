@@ -1,0 +1,19 @@
+<!--component/user-messge-layout/userMessage.wxml-->
+<view class="userMessage-warpper">
+  <view class="userMessage-content">
+    <view class="userMessage-header">
+      <text class="userMessage-title">我的学习</text>
+      <text class="userMessage-path">学习记录</text>
+    </view>
+    <view class="userMessage-footer">
+      <view class="userMessage-part1">
+        <text class="userMessage-title1">我的课程</text>
+        <text class="userMessage-data">113<text class="userMessage-unit">门</text></text>
+      </view>
+      <view class="userMessage-part2">
+        <text class="userMessage-title1">已完成课程</text>
+        <text class="userMessage-data">113<text class="userMessage-unit">门</text></text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/user/user.wxml-->
+<view class="index-header theme-colour"></view>
+<view class="headportrait">
+  <headportrait></headportrait>
+</view>
+<view class="usermessage">
+  <usermessage></usermessage>
+</view>
+<view class="messagelayout">
+  <messagelayout></messagelayout>
+</view>
+<view class="page-icon">
+<page-icon pageIcon="{{pageIcon}}"></page-icon>
+</view>

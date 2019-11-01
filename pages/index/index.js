@@ -64,7 +64,7 @@ Page({
       }
     ],
     specailArr: [{
-        title : "精英课程高大上的PPT设计秘籍",
+        title: "精英课程高大上的PPT设计秘籍",
         des_images: [
           "http://edu.hd/assets/img/qrcode.png"
         ]
@@ -88,6 +88,43 @@ Page({
         ]
       },
     ],
+    courseCoverArr: [{
+      title: "精英课程高大上的PPT设",
+      subtitle: "精英课程高大上的PPT设计秘籍dasdasdasd",
+      des_images: [
+        "http://edu.hd/assets/img/qrcode.png"
+      ],
+      price: "10.00",
+      price_old: "20.00",
+      num: "5"
+    }, {
+      title: "精英课程高大上的PPT设",
+      subtitle: "精英课程高大上的PPT设计秘籍dasdasdasd",
+      des_images: [
+        "http://edu.hd/assets/img/qrcode.png"
+      ],
+      price: "10.00",
+      price_old: "20.00",
+      num: "5"
+    }, {
+      title: "精英课程高大上的PPT设",
+      subtitle: "精英课程高大上的PPT设计秘籍dasdasdasd",
+      des_images: [
+        "http://edu.hd/assets/img/qrcode.png"
+      ],
+      price: "10.00",
+      price_old: "20.00",
+      num: "5"
+      }, {
+        title: "精英课程高大上的PPT设",
+        subtitle: "精英课程高大上的PPT设计秘籍dasdasdasd",
+        des_images: [
+          "http://edu.hd/assets/img/qrcode.png"
+        ],
+        price: "10.00",
+        price_old: "20.00",
+        num: "5"
+      }],
     currentTab: 0 //预定的位置
   },
   onLoad() {
