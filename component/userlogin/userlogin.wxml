@@ -1,0 +1,5 @@
+<!--component/head-portrait/headPortrait.wxml-->
+<view class="userlogin-warpper" bindtap="toLogin">
+  <image class="userlogin-pic" src="{{headImg}}">
+  </image>
+</view>

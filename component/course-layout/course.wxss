@@ -63,6 +63,7 @@
   font-size: 25rpx;
   color: #bababa;
   margin-right: 20rpx;
+  text-decoration:line-through;
 }
 
 .price {
@@ -91,4 +92,15 @@
   text-align: center;
   border-bottom-left-radius: 9rpx;
   border-bottom-right-radius: 9rpx;
+}
+.advertising-warpper {
+  width: 650rpx;
+  height: 220rpx;
+  margin: 0 auto;
+}
+
+.advertising-pic {
+  width: 650rpx;
+  height: 220rpx;
+  border-radius: 15rpx;
 }

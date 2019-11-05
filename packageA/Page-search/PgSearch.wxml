@@ -1,0 +1,58 @@
+<!--pages/Page-search/PgSearch.wxml-->
+<view class="search-wrap">
+  <input class="search" bindinput="search" value='{{inputValue}}' placeholder="搜索专栏/课程/直播间"></input>
+  <image src="/images/search.png" class="searchImg"></image>
+  <image src="/images/cancel.png" class="closeImg" bindtap='close' wx:if="{{closeImg}}"></image>
+  <view class="cancel" bindtap='cancel'>取消</view>
+</view>
+
+<!-- 搜索列表 -->
+<view class="search-content">
+<view class="noHistorylayout" wx:if="{{noHistory}}"><image class="noHistory" src="/images/noHistory.png"></image><text class="historyRemind">亲，你还未搜索过</text></view>
+  <!-- 历史搜索 -->
+  <view class="historywrap" wx:if="{{history}}">
+    <view class="historyTitle">
+      <view>历史搜索</view>
+      <image src="/images/cancel.png" bindtap='cancelHistory'></image>
+    </view>
+    <view class="historyList">
+      <view wx:for="{{historyData}}" bindtap='searchHistory' data-name="{{item}}">{{item}}</view>
+    </view>
+  </view>
+  <!-- 暂无数据组件 -->
+  <noData wx:if="{{noData}}">
+    <view class="unfinedlayout"><image class="undefind" src="/images/unfined.png"></image><text class="unfinedData">暂无相关数据</text></view>
+  </noData>
+  <!-- 搜索列表 -->
+
+<view class="course-warpper">
+  <view class="course-content" wx:for="{{carList}}" wx:key="{{item.id}}" bindtap='selectCar' data-name="{{item.name}}">
+    <view class="course-pic" data-name="{{item.name}}">
+      <image class="course-pic2" data-name="{{item.name}}" src="{{item.images}}" ></image>
+      <view class="pic-desc" data-name="{{item.name}}">
+        <text style="font-size:22rpx;color:#b2b2b2;font-weight:bold" data-name="{{item.name}}">{{item.pv}}</text>
+      </view>
+    </view>
+    <view class="course-main" data-name="{{item.name}}">
+      <view class="course-top" data-name="{{item.name}}">
+        <view class="course-title" data-name="{{item.name}}">
+          <text data-name="{{item.name}}">{{item.name}}</text>
+        </view>
+        <view class="courese-desc" data-name="{{item.name}}">
+          <text data-name="{{item.name}}">{{item.subtitle}}</text>
+        </view>
+      </view>
+      <view class="course-bottom" data-name="{{item.name}}">
+        <view class="courese-periods" data-name="{{item.name}}">
+          {{update}}{{item.resources_count}}{{expect}}
+        </view>
+        <view class="courese-price" data-name="{{item.name}}">
+          <view class="old-price" data-name="{{item.name}}">￥{{item.price_old}}</view>
+          <view class="price" data-name="{{item.name}}">￥{{item.price}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+  
+</view>

@@ -72,6 +72,7 @@
 .old-price {
   color: #bababa;
   margin-right: 20rpx;
+  text-decoration:line-through;
 }
 
 .price {

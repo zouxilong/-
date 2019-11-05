@@ -2,31 +2,15 @@
 <view class="recommend-warpper">
   <view class="recommend-content">
     <view class="recommend-title">
-      根据订阅的高大上PPT设计秘笈为您推荐
+      根据订阅的<text class="recommend-titleStyle">{{course.name}}</text>为您推荐
     </view>
     <view class="recommend-main">
-      <view class="recommend-block">
+      <view class="recommend-block" wx:for="{{course_list}}">
         <view class="recommend-pic1">
-          <image class="recommend-pic2" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+          <image class="recommend-pic2" src="{{item.images}}"></image>
         </view>
         <view class="recommend-desc">
-          XXX基础英语课
-        </view>
-      </view>
-      <view class="recommend-block">
-        <view class="recommend-pic1">
-          <image class="recommend-pic2" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
-        </view>
-        <view class="recommend-desc">
-          XXX基础英语课
-        </view>
-      </view>
-      <view class="recommend-block">
-        <view class="recommend-pic1">
-          <image class="recommend-pic2" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
-        </view>
-        <view class="recommend-desc">
-          XXX基础英语课
+          {{item.name}}
         </view>
       </view>
     </view>
@@ -38,30 +22,30 @@
       <text style="font-size:30rpx;font-weight:bold;letter-spacing:2rpx;">还可以听{{title}}</text>
     </view>
     <view class="titlebar-all">
-      <text style="font-size:24rpx;letter-spacing:2rpx;color:#abacac">全部课程</text>
+      <text style="font-size:24rpx;letter-spacing:2rpx;color:#abacac">查看更多</text>
     </view>
   </view>
 </view>
 <view class="audio-warpper">
-  <view class="audio-top">
+  <view class="audio-top" wx:for="{{course_guess_audio}}">
     <view class="audio-header">
       <view class="audio-pic1">
-        <image class="audio-pic2" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+        <image class="audio-pic2" mode="scaleToFill" src="{{item.des_images}}"></image>
       </view>
       <view class="audio-main">
         <view class="main-top">
-          <text class="audio-title">47本好书提升人生格局</text>
-          <text class="audio-subtitle">豆瓣、亚马逊高分好书！</text>
+          <text class="audio-title">{{item.name}}</text>
+          <text class="audio-subtitle">{{item.subtitle}}</text>
         </view>
-        <text class="audio-update">已更新至第11集</text>
+        <text class="audio-update">已更新至第{{item.resources_count}}集</text>
       </view>
     </view>
     <view class="audio-footer">
       <view class="audio-pic3">
-        <image class="audio-pic3" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+        <image class="audio-pic3" mode="scaleToFill" src="{{item.des_images}}"></image>
       </view>
       <view class="audio-main2">
-        <text class="audio-desc">老路：50个源自硅谷的工作方法论</text>
+        <text class="audio-desc">{{item.des}}</text>
       </view>
     </view>
   </view>

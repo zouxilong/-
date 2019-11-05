@@ -1,5 +1,4 @@
 /* pages/index/index.wxss */
-
 .index-header {
   width: 100%;
   height: 352rpx;
@@ -36,6 +35,7 @@
 .active {
   color: #fff;
   position: relative;
+  font-size: 35rpx;
 }
 
 .swiper-tab-item.active:after {

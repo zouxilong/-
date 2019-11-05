@@ -1,4 +1,5 @@
-//app.js
+//app.js\
+wx.host = 'http://edu.hd/';
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -33,6 +34,7 @@ App({
       }
     })
   },
+
   globalData: {
     userInfo: null
   }

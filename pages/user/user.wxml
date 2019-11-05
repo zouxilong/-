@@ -1,7 +1,7 @@
 <!--pages/user/user.wxml-->
 <view class="index-header theme-colour"></view>
 <view class="headportrait">
-  <headportrait></headportrait>
+  <headportrait headImg="{{headImg}}"></headportrait>
 </view>
 <view class="usermessage">
   <usermessage></usermessage>

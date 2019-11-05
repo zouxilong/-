@@ -55,7 +55,7 @@
 }
 .audio-warpper {
   width: 705rpx;
-  margin: 0 auto;
+  margin: 0 auto 20rpx;
   background: #fff;
   border-radius: 20rpx;
 }
@@ -149,4 +149,10 @@
   font-family: "PingFang-SC-Regular";
   letter-spacing: 2rpx;
   color: #000;
+}
+.recommend-titleStyle{
+  font-size: 20rpx;
+  color: #969292;
+  text-decoration: underline;
+  margin:0 15rpx; 
 }

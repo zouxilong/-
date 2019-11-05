@@ -1,24 +1,24 @@
 <!--component/audio-layout/audio.wxml-->
-<view class="audio-warpper">
+<view class="audio-warpper" wx:for="{{list_free}}">
   <view class="audio-top">
     <view class="audio-header">
       <view class="audio-pic1">
-        <image class="audio-pic2" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+        <image class="audio-pic2" mode="scaleToFill" src="{{item.images}}"></image>
       </view>
       <view class="audio-main">
         <view class="main-top">
-          <text class="audio-title">47本好书提升人生格局</text>
-          <text class="audio-subtitle">豆瓣、亚马逊高分好书！</text>
+          <text class="audio-title">{{item.name}}</text>
+          <text class="audio-subtitle">{{item.des}}</text>
         </view>
-        <text class="audio-update">已更新至第11集</text>
+        <text class="audio-update">{{update}}{{item.resources_count}}{{episode}}</text>
       </view>
     </view>
     <view class="audio-footer">
       <view class="audio-pic3">
-        <image class="audio-pic3" mode="scaleToFill" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+        <image class="audio-pic3" mode="scaleToFill" src="{{item.images}}"></image>
       </view>
       <view class="audio-main2">
-        <text class="audio-desc">老路：50个源自硅谷的工作方法论</text>
+        <text class="audio-desc">{{item.des}}</text>
       </view>
     </view>
   </view>

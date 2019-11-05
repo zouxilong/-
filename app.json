@@ -1,27 +1,18 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/user/user",
-    "component/Page-user-messagelayout/messagelayout",
-    "component/head-portrait/headPortrait",
-    "component/usermessage-layout/userMessage",
+    "pages/index/index",
     "pages/study/study",
-    "component/couseCover-layout/couseCover",
-    "component/audio-layout/audio",
-    "component/page-icon/pageIcon",
-    "component/search/search",
-    "component/titleBar-layout/titlebar",
-    "component/course-layout/course",
-    "component/special-layout/special",
-    "component/advertisting-pic/advertisting",
-    "component/carousel-pic/carousel",
-    "component/selectedCourse-layout/selected",
-    "component/copyright/copyright",
-    "pages/login/login",
-    "pages/logs/logs",
-    "component/tab/tab",
-    "component/Page-study-recommend/recommend",
-    "component/Page-study-subscibe/subscibe"
+    "pages/login/login"
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "Page-search/PgSearch",
+        "login/login"
+      ]
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",

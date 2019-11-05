@@ -1,13 +1,13 @@
 <!--component/couseCover-layout/couseCover.wxml-->
 <view class="courseCover-warpper">
-  <view class="courseCover-content" wx:for="{{courseCoverArr}}" wx:for-item="item">
+  <view class="courseCover-content" wx:for="{{courseCoverArr}}">
     <view class="courseCover-pic">
       <image class="courseCover-pic2" src="{{item.des_images}}"></image>
     </view>
     <view class="courseCover-main">
       <view class="courseCover-top">
         <view class="courseCover-title">
-          <text>{{item.title}}</text>
+          <text>{{item.name}}</text>
         </view>
         <view class="courseCover-subtitle">
           <text>{{item.subtitle}}</text>
@@ -15,11 +15,11 @@
       </view>
       <view class="courseCover-bottom">
         <view class="courseCover-periods">
-          共{{item.num}}章
+          {{total}}{{item.resources_count}}{{chapter}}
         </view>
         <view class="courseCover-price">
-          <view class="old-price">${{item.price_old}}</view>
-          <view class="price">${{item.price}}</view>
+          <view class="old-price">￥{{item.price_old}}</view>
+          <view class="price">￥{{item.price}}</view>
         </view>
       </view>
     </view>

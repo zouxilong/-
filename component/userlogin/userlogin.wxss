@@ -1,12 +1,12 @@
 /* component/head-portrait/headPortrait.wxss */
 
-.headPortrait-warpper {
+.userlogin-warpper {
   width: 150rpx;
   height: 150rpx;
   border-radius: 50%;
 }
 
-.headPortrait-pic {
+.userlogin-pic {
   width: 150rpx;
   height: 150rpx;
   border-radius: 50%;

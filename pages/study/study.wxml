@@ -1,6 +1,5 @@
 <!--pages/study/study.wxml-->
 <view class='container'>
-
   <view class='tab-wrapper'>
     <view id='tableft' class='tab-left {{currentTab === 0 ? "tab-active":""}}' bindtap='switchTab'>我的订阅
       <text class='course-update {{currentTab === 0 ? "tab-active2":""}}'>课程更新</text>
@@ -12,10 +11,13 @@
 
   <view class='content-wrapper' wx:if='{{currentTab === 0}}'>
     <view class="subscibe">
-      <subscibe courseCoverArr="{{courseCoverArr}}" />
+      <subscibe subscibeArr="{{subscibeData}}" />
     </view>
   </view>
   <view class='content-wrapper' wx:if='{{currentTab === 1}}'>
-    <recommend />
+    <recommend course="{{course}}" course_list="{{course_list}}" course_guess_audio="{{course_guess_audio}}" />
+  </view>
+  <view class="copyright">
+    <copyright></copyright>
   </view>
 </view>

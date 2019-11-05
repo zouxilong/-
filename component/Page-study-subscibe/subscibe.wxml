@@ -1,27 +1,30 @@
 <!--component/Page-study-subscibe/subscibe.wxml-->
 <view class="courseCover-warpper">
-  <view class="courseCover-content" wx:for="{{courseCoverArr}}" wx:for-item="item">
+  <view class="courseCover-content" wx:for="{{subscibeArr}}" wx:for-item="item">
     <view class="courseCover-pic">
-      <image class="courseCover-pic2" src="{{item.des_images}}"></image>
+      <image class="courseCover-pic2" src="{{item.course.des_images}}"></image>
     </view>
     <view class="courseCover-main">
       <view class="courseCover-top">
         <view class="courseCover-title">
-          <text>{{item.title}}</text>
+          <text>{{item.course.name}}</text>
         </view>
         <view class="courseCover-subtitle">
-          <text>{{item.subtitle}}</text>
+          <text>{{item.course.subtitle}}</text>
         </view>
       </view>
       <view class="courseCover-bottom">
         <view class="courseCover-periods">
-          共{{item.num}}章
+          共{{item.course.resources_count}}章
         </view>
         <view class="courseCover-price">
-          <view class="old-price">${{item.price_old}}</view>
-          <view class="price">${{item.price}}</view>
+          <view class="old-price">￥{{item.course.price_old}}</view>
+          <view class="price">￥{{item.course.price}}</view>
         </view>
       </view>
     </view>
   </view>
+  <!-- <view class="copyright-wrapper">
+<text class="iconfont iconziyuan" style="font-size:55rpx;padding-left:60rpx"></text> 
+</view> -->
 </view>

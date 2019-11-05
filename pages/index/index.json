@@ -11,5 +11,6 @@
     "audiolayout":"/component/audio-layout/audio",
     "copyright":"/component/copyright/copyright",
     "courseCover":"/component/couseCover-layout/couseCover"
-  }
+  },
+  "navigationBarTitleText":"知识猎手"
 }

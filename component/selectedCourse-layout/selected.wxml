@@ -1,5 +1,5 @@
 <!--component/selected-course/selected.wxml-->
-<view class="selected-warpper">
+<!-- <view class="selected-warpper">
   <view class="selected-header">
     <text class="header-title">本周精选课</text>
     <view class="btn-warpper">
@@ -17,5 +17,42 @@
       <text class="main-title">色彩心理学</text>
       <text class="main-desc">色彩心理学色彩心理学色彩心理学色彩心理学色彩心理学色彩心理学色彩心理学色彩心理学彩心理学色彩心理学色彩心理学色彩心理色彩心理学色彩心理</text>
     </view>
+  </view>
+</view> -->
+<view class='test'>
+  <!-- 这里是设置显示一张 -->
+  <swiper display-multiple-items='1' current="{{currentSwiper}}" bindchange="swiperChange">
+    <!-- 遍历js中的图片 -->
+    <block wx:for="{{selectedArr}}">
+      <!-- box外层swiper -->
+      <swiper-item>
+        <view class="selected-warpper">
+          <view class="selected-header">
+            <text class="header-title">本周精选课</text>
+            <view class="btn-warpper">
+              <button class="btn">
+                <text class="iconfont iconbofang" style="font-size:33rpx;"></text>
+                <text class="btn-check">查看</text>
+              </button>
+            </view>
+          </view>
+          <view class="selected-main">
+            <view class="main-pic">
+              <image class="pic" src="{{item.course.images}}"></image>
+            </view>
+            <view class="main-content">
+              <text class="main-title">{{item.course.name}}</text>
+              <text class="main-desc">{{item.course.subtitle}}</text>
+            </view>
+          </view>
+        </view>
+
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="dots">
+    <block wx:for="{{selectedArr}}">
+      <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>
+    </block>
   </view>
 </view>

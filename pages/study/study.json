@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "recommend": "/component/Page-study-recommend/recommend",
-    "subscibe": "/component/Page-study-subscibe/subscibe"
-  }
+    "subscibe": "/component/Page-study-subscibe/subscibe",
+    "copyright":"/component/copyright/copyright"
+  },
+  "navigationBarTitleText":"学习"
 }

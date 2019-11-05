@@ -1,4 +1,8 @@
 // pages/study/study.js
+import {
+  getSubscribe,
+  getLoveGuess
+} from '../../util/service'
 Page({
 
   /**
@@ -6,46 +10,30 @@ Page({
    */
   data: {
     currentTab: 0,
-    courseCoverArr: [{
-      title: "精英课程高大上的PPT设",
-      subtitle: "精英课程高大上的PPT设计秘籍dasdasdasd",
-      des_images: [
-        "http://edu.hd/assets/img/qrcode.png"
-      ],
-      price: "10.00",
-      price_old: "20.00",
-      num: "5"
-    }, {
-      title: "精英课程高大上的PPT设",
-      subtitle: "精英课程高大上的PPT设计秘籍dasdasdasd",
-      des_images: [
-        "http://edu.hd/assets/img/qrcode.png"
-      ],
-      price: "10.00",
-      price_old: "20.00",
-      num: "5"
-    }, {
-      title: "精英课程高大上的PPT设",
-      subtitle: "精英课程高大上的PPT设计秘籍dasdasdasd",
-      des_images: [
-        "http://edu.hd/assets/img/qrcode.png"
-      ],
-      price: "10.00",
-      price_old: "20.00",
-      num: "5"
-    }, {
-      title: "精英课程高大上的PPT设",
-      subtitle: "精英课程高大上的PPT设计秘籍dasdasdasd",
-      des_images: [
-        "http://edu.hd/assets/img/qrcode.png"
-      ],
-      price: "10.00",
-      price_old: "20.00",
-      num: "5"
-    }],
+  },
+  reset() {
+    this.setData({
+      subscibeData: null,
+      course: null,
+      course_list: null,
+      course_guess_audio: null
+    })
   },
   onLoad() {
-
+    this.reset()
+    getSubscribe()
+      .then(listData => {
+        this.setData({
+          subscibeData: listData.data.data
+        })
+        return getLoveGuess();
+      }).then(listData =>
+        this.setData({
+          course: listData.data.course_guess.course,
+          course_list: listData.data.course_guess.list,
+          course_guess_audio: listData.data.course_guess_audio
+        })
+      )
   },
   /**
    * 切换底部tab

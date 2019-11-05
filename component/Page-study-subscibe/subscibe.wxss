@@ -1,5 +1,8 @@
 /* component/Page-study-subscibe/subscibe.wxss */
+
 /* component/Page-study-recommend/recommend.wxss */
+
+
 .courseCover-warpper {
   width: 680rpx;
   display: flex;
@@ -79,10 +82,12 @@
   color: #fd5f71;
   margin-top: -1rpx;
 }
-.courseCover-title{
+
+.courseCover-title {
   font-size: 30rpx;
   font-weight: bold;
 }
+
 .courseCover-title, .courseCover-periods, .old-price, .price {
   font-family: "PingFang-SC-Bold";
 }
@@ -91,7 +96,7 @@
   font-weight: bold;
 }
 
- .old-price,.courseCover-periods {
+.old-price, .courseCover-periods {
   font-size: 20rpx;
 }
 
@@ -104,4 +109,9 @@
   text-align: center;
   border-bottom-left-radius: 9rpx;
   border-bottom-right-radius: 9rpx;
+}
+
+.copyright-wrapper {
+  width: 100%;
+  text-align: center;
 }

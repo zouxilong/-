@@ -1,10 +1,10 @@
 <!--component/course/course.wxml-->
 <view class="course-warpper">
-  <view class="course-content" wx:for="{{courseArr}}" wx:for-item="item">
+  <view class="course-content" wx:for="{{courseArr}}">
     <view class="course-pic">
-      <image class="course-pic2" src="{{item.des_images}}"></image>
+      <image class="course-pic2" src="{{item.images}}"></image>
       <view class="pic-desc">
-        <text style="font-size:22rpx;color:#b2b2b2;font-weight:bold">19900人在看</text>
+        <text style="font-size:22rpx;color:#b2b2b2;font-weight:bold">{{item.pv}}</text>
       </view>
     </view>
     <view class="course-main">
@@ -18,11 +18,11 @@
       </view>
       <view class="course-bottom">
         <view class="courese-periods">
-          已更新{{item.banben}}期
+          {{update}}{{item.resources_count}}{{expect}}
         </view>
         <view class="courese-price">
-          <view class="old-price">${{item.price_old}}</view>
-          <view class="price">${{item.price}}</view>
+          <view class="old-price">￥{{item.price_old}}</view>
+          <view class="price">￥{{item.price}}</view>
         </view>
       </view>
     </view>
